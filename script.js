@@ -23,9 +23,9 @@ let board=["","","","","","","","",""]
 let running=false
 initializeGame()
 
-let winner = new Audio("winner.m4a")
-let draw = new Audio("draw.m4a")
-let click = new Audio("click.m4a")
+let winner = new Audio("./audio/winner.m4a")
+let draw = new Audio("./audio/draw.m4a")
+let click = new Audio("./audio/click.m4a")
 
 function initializeGame(){
     playerInfo.textContent=`${currentPlayer} 's turn`;
