@@ -6,7 +6,6 @@ xElements = document.querySelectorAll(".x-ele");
 oElements = document.querySelectorAll(".o-ele");
 confetti = document.querySelector(".confetti");
 
-console.log(confetti);
 var selectedEle = null
 var currentPlayer="X"
 winningConditions=[
@@ -101,11 +100,10 @@ function checkWinner(){
     }
 
     if(gameOver){
-        playerInfo.textContent=`"${currentPlayer}" W O N`
+        playerInfo.textContent=`" ${currentPlayer} " W O N`
         running=false
         confetti.classList.toggle("confetti-show")
         setTimeout(()=>confetti.classList.toggle("confetti-show"),2000)
-        console.log(confetti);
         playAudio(winner)
     }else if(!board.includes("")){
         playerInfo.textContent=`D r a w`
