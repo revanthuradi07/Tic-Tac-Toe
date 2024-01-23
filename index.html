@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="header">
+       <h1>TIC TAC TOE</h1>
+   </div>
+    <div class="main">
+        <div class="x-container">
+            <span class="x-ele ele" draggable="true" >X</span>
+            <span class="x-ele ele" draggable="true" >X</span>
+            <span class="x-ele ele" draggable="true" >X</span>
+            <span class="x-ele ele" draggable="true" >X</span>
+            <span class="x-ele ele" draggable="true" >X</span>
+        </div>
+        <div class="container">
+            <div class="cell cell0" cellIndex="0"></div>
+            <div class="cell cell1" cellIndex="1"></div>
+            <div class="cell cell2" cellIndex="2"></div>
+            <div class="cell cell3" cellIndex="3"></div>
+            <div class="cell cell4" cellIndex="4"></div>
+            <div class="cell cell5" cellIndex="5"></div>
+            <div class="cell cell6" cellIndex="6"></div>
+            <div class="cell cell7" cellIndex="7"></div>
+            <div class="cell cell8" cellIndex="8"></div>
+        </div>
+        <div class="o-container">
+            <span class="o-ele ele" draggable="">O</span>
+            <span class="o-ele ele" draggable="">O</span>
+            <span class="o-ele ele" draggable="">O</span>
+            <span class="o-ele ele" draggable="">O</span>
+            <span class="o-ele ele" draggable="">O</span>
+        </div>
+        <img class="confetti" src="./confetti.gif">
+    </div>
+        <div class="desc">
+            <h3 id="playerTurn">player turn</h3>
+            <button id="restart">New game <i class="ri-restart-line"></i></button>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
